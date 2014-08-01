@@ -57,9 +57,10 @@ function init() { // 초기화 험슈슈 입니다.
 		text.visible = 1},400)
 		button.visible = false;
 		bg.visible = true;
+		stage.addChild(text);
 	});
 
-	stage.addChild(text);
+	
 	text.setText(keyword + "에 가면~")
 	text.anchor.x = 0.5;
 	text.anchor.y = 0.5;
@@ -149,7 +150,7 @@ function init() { // 초기화 험슈슈 입니다.
 	object = PIXI.Sprite.fromImage('img/game/Singing/'+toEnglish(keyword) + ".jpg")
 	stage.addChild(object);
 	object.position.x = width/2;
-	object.position.y = height + 300;
+	object.position.y = height + 100;
 	object.anchor.x = 0.5
 	object.anchor.y = 0.5
 
@@ -161,14 +162,15 @@ function init() { // 초기화 험슈슈 입니다.
 		state = 2
 		text.visible = 1},400)
 		button.visible = false;
+		stage.addChild(text);
 	});
 
-	stage.addChild(text);
+	
 	text.setText(keyword)
 	text.anchor.x = 0.5;
 	text.anchor.y = 0.5;
 	text.position.x = width/2;
-	text.position.y = height + 500;
+	text.position.y = height + 200;
 	text.visible = 0;
 
 
@@ -329,11 +331,12 @@ function init() { // 초기화 험슈슈 입니다.
 		state = 2
 		text.setText(point[parseInt(Math.random() * point.length)] + " 인사람 접어!")
 		text.visible = 1
+		stage.addChild(text);
 	},4)
 
 	});
 
-	stage.addChild(text);
+	
 
 	text.anchor.x = 0.5;
 	text.anchor.y = 0.5;
@@ -414,10 +417,11 @@ function init() { // 초기화 험슈슈 입니다.
 		state = 2
 		text.visible = 1},400)
 		button.visible = false;
+		stage.addChild(text);
 
 	});
 
-	stage.addChild(text);
+	
 	text.setText(chars[parseInt(Math.random()*chars.length)] + chars[parseInt(Math.random()*chars.length)])
 	text.anchor.x = 0.5;
 	text.anchor.y = 0.5;
@@ -521,7 +525,6 @@ function init() { // 초기화 험슈슈 입니다.
 		bombSprite.scale.y = 2
 		bombSprite.play();
 		bombSprite.visible = 0
-		stage.addChild(bombSprite);
 
 		stage.addChild(tt);
 		tt.position.x = width + 400;
@@ -539,6 +542,7 @@ function init() { // 초기화 험슈슈 입니다.
 		state = 2;
 		time.visible = true;
 		button.visible = false;
+		stage.addChild(bombSprite);
 	});
 
 	run() // Thread를 시작합니닷!
