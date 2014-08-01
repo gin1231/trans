@@ -17,7 +17,7 @@ angular.module('starter.game', [])
 	var bdown = PIXI.Texture.fromImage('img/game/b2.png')
 	var button = new PIXI.Sprite(bup);
 	var color = "#" + parseInt(Math.random()*0xffffff).toString(16);
-	var text = new PIXI.Text("null",{ font: "bold 200px Arial", fill:color, align: "center"});
+	var text = new PIXI.Text("null",{ font: "bold 50px Arial", fill:color, align: "center"});
 /////////////////////////////////////////////////////////////////////////////////////////////
 	var point = ['시장','학교','목욕탕','지하철','노래방'];
 	var time = 0;
@@ -301,7 +301,7 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 	var bdown = PIXI.Texture.fromImage('img/game/b2.png')
 	var button = new PIXI.Sprite(bup);
 	var color = "#" + parseInt(Math.random()*0xffffff).toString(16);
-	var text = new PIXI.Text("null",{ font: "bold 100px Arial", fill:color, align: "center"});
+	var text = new PIXI.Text("null",{ font: "bold 20px Arial", fill:color, align: "center"});
 		var bg = PIXI.Sprite.fromImage('img/game/MrSong/bg.jpg');
 /////////////////////////////////////////////////////////////////////////////////////////////
 	var point = ['학생','여자','기획자','쏴장님','해적','검은발','흑발','개발자'];
@@ -389,7 +389,7 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 	var bdown = PIXI.Texture.fromImage('img/game/b2.png')
 	var button = new PIXI.Sprite(bup);
 	var color = "#" + parseInt(Math.random()*0xffffff).toString(16);
-	var text = new PIXI.Text("null",{ font: "bold 300px Arial", fill:color, align: "center"});
+	var text = new PIXI.Text("null",{ font: "bold 80px Arial", fill:color, align: "center"});
 	var bg = PIXI.Sprite.fromImage('img/game/Korean/bg.png');
 /////////////////////////////////////////////////////////////////////////////////////////////
 	var chars = ['ㄱ','ㄴ','ㄷ','ㄹ','ㅁ','ㅂ','ㅅ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ'];
@@ -476,7 +476,7 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 	var bomb = PIXI.Sprite.fromImage('img/game/Bomb/bomb.png')
 	var bup = PIXI.Texture.fromImage('img/game/Bomb/b1.png')
 	var bdown = PIXI.Texture.fromImage('img/game/Bomb/b2.png')
-	var time = new PIXI.Text('00.00',{ font: "bold 220px Arvo", fill: "#ff3d3d", align: "center", stroke: "#000000", strokeThickness: 30 })
+	var time = new PIXI.Text('00.00',{ font: "bold 50px Arvo", fill: "#ff3d3d", align: "center", stroke: "#000000", strokeThickness: 30 })
 	var button = new PIXI.Sprite(bup);
 	var tt = PIXI.Sprite.fromImage('img/game/Bomb/bye.jpg');
 	var bombSprite
