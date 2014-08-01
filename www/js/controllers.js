@@ -5,8 +5,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('TodayCtrl', function($scope, $ionicModal, $ionicPopup, $timeout, Alcohols) {
-
-
   $scope.selectedDegree = 0;
   $scope.drinkTypes = Alcohols.drinkTypes;
   var allDrinks = Alcohols.drinks;
@@ -45,7 +43,15 @@ angular.module('starter.controllers', [])
             type: 'button-positive',
             onTap: function(e) {
               if ($scope.data.glass === undefined || $scope.data.bottle === undefined) {
-                e.preventDefault();
+                if($scope.data.drinkType === undefined) {
+                  $scope.data.drinkType = 0;
+                }
+                if($scope.data.glass === undefined) {
+                  $scope.data.glass = 0;
+                }
+                if($scope.data.bottle === undefined) {
+                  $scope.data.bottle = 0;
+                }
               } else {
                 var valBottle = [360*18.5, 750*15, 355*5, 750*6, 700*40, 750*13];
                 var resBottle = $scope.data.bottle * valBottle[$scope.data.drinkType];
