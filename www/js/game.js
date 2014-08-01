@@ -228,7 +228,7 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 	var object = PIXI.Sprite.fromImage('img/game/Spin/soju.jpg');
 /////////////////////////////////////////////////////////////////////////////////////////////
 	var time = 0;
-	var n = 400 + Math.random()*10;// 회전량
+	var n = 200 + Math.random()*10;// 회전량
 /////////////////////////////////////////////////////////////////////////////////////////////
 	init() // 초기화 실행
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -480,13 +480,13 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 	var bomb = PIXI.Sprite.fromImage('img/game/Bomb/bomb.png')
 	var bup = PIXI.Texture.fromImage('img/game/Bomb/b1.png')
 	var bdown = PIXI.Texture.fromImage('img/game/Bomb/b2.png')
-	var time = new PIXI.Text('00.00',{ font: "bold 50px Arvo", fill: "#ff3d3d", align: "center", stroke: "#000000", strokeThickness: 30 })
+	var time = new PIXI.Text('00.00',{ font: "bold 50px Arvo", fill: "#ff3d3d", align: "center", stroke: "#000000", strokeThickness: 10 })
 	var button = new PIXI.Sprite(bup);
 	var tt = PIXI.Sprite.fromImage('img/game/Bomb/bye.jpg');
 	var bombSprite
 /////////////////////////////////////////////////////////////////////////////////////////////
 	var state = 0  // 기본 상태 ex) 1 - run , 2 - stop
-	var timeInt = 2223 //초 단위 ? 하지만 폰성능에 따라 다름 // 맞기 싫으면 홀수로 해라...
+	var timeInt = 1111 //초 단위 ? 하지만 폰성능에 따라 다름 // 맞기 싫으면 홀수로 해라...
 /////////////////////////////////////////////////////////////////////////////////////////////
 	init() // 초기화 실행
 /////////////////////////////////////////////////////////////////////////////////////////////
@@ -526,7 +526,7 @@ function init() { // 초기화 험슈슈 입니다.
 
 		stage.addChild(tt);
 		tt.position.x = width + 400;
-		tt.position.y = height/5*4
+		tt.position.y = height/3 * 2
 		tt.anchor.x = 0.5;
 		tt.anchor.y = 0.5;
 
@@ -540,7 +540,7 @@ function init() { // 초기화 험슈슈 입니다.
 		state = 2;
 		time.visible = true;
 		button.visible = false;
-		stage.addChild(bombSprite);
+		
 	});
 
 	run() // Thread를 시작합니닷!
@@ -560,6 +560,7 @@ function update() { // 업데이트! Thread를 통해 지속적인 업데이트�
 				state = 3;
 				time.visible = false;
 				bombSprite.visible = true
+				stage.addChild(bombSprite);
 			}
 			break;
 		case 3 :
