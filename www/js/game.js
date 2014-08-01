@@ -521,8 +521,6 @@ function init() { // 초기화 험슈슈 입니다.
 		bombSprite.position.y = height/2
 		bombSprite.anchor.x = 0.5
 		bombSprite.anchor.y = 0.5
-		bombSprite.scale.x = 2
-		bombSprite.scale.y = 2
 		bombSprite.play();
 		bombSprite.visible = 0
 
