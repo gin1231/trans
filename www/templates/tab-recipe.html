@@ -3,7 +3,7 @@
     <div class="recipe-btn" ng-repeat="recipe in recipes" on-tap="showBigImage('{{ recipe.name }}', '{{ recipe.image }}')">
       <div>
         <span>{{ recipe.name }}</span>
-        <img ng-src="/img/recipes/small/{{ recipe.image }}.png" style="height: 50px;" />
+        <img ng-src="img/recipes/small/{{ recipe.image }}.png" style="height: 50px;" />
       </div>
     </div>
   </ion-content>
@@ -16,7 +16,7 @@
       <a class="button button-stable" on-tap="hideModal()">닫기</a>
     </ion-header-bar>
     <ion-content>
-      <img ng-src="/img/recipes/big/{{ currentRecipe.image }}.jpg" style="max-width: 100%;" />
+      <img ng-src="img/recipes/big/{{ currentRecipe.image }}.jpg" style="max-width: 100%;" />
     </ion-content>
   </ion-modal-view>
 </script>

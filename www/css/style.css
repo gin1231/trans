@@ -4,7 +4,7 @@
   width: 100%;
   height: 1000px;
   overflow-y: hidden;
-  background: url(/img/splash_1.gif) no-repeat center top;
+  background: url('../img/splash_1.gif') no-repeat center top;
 }
 .bar.bar-stable {
   background-color: #247F53;
@@ -57,22 +57,22 @@
   background-position: 80px center !important;
 }
 .item-content.soju {
-  background-image: url('/img/drink_types/soju.png') !important;
+  background-image: url('../img/drink_types/soju.png') !important;
 }
 .item-content.sake {
-  background-image: url('/img/drink_types/sake.png') !important;
+  background-image: url('../img/drink_types/sake.png') !important;
 }
 .item-content.beer {
-  background-image: url('/img/drink_types/beer.png') !important;
+  background-image: url('../img/drink_types/beer.png') !important;
 }
 .item-content.makgeolli {
-  background-image: url('/img/drink_types/makgeolli.png') !important;
+  background-image: url('../img/drink_types/makgeolli.png') !important;
 }
 .item-content.vodka {
-  background-image: url('/img/drink_types/vodka.png') !important;
+  background-image: url('../img/drink_types/vodka.png') !important;
 }
 .item-content.wine {
-  background-image: url('/img/drink_types/wine.png') !important;
+  background-image: url('../img/drink_types/wine.png') !important;
 }
 
 /* hey */
