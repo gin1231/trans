@@ -1,0 +1,17 @@
+<ion-view title="주량 설정하기">
+  <ion-content has-header="true" padding="true">
+    <div class="list">
+      <label class="item item-radio drink-type-label" ng-repeat="drinkType in drinkTypes">
+        <input type="radio" name="drinkType" ng-model="data.drinkType" value="{{ $index }}">
+        <div class="item-content {{ drinkType.enName }}">
+          {{ drinkType.name }}
+        </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+    </div>
+    <input type="number" ng-model="data.bottle" placeholder="병">
+    <input type="number" ng-model="data.glass" placeholder="잔">
+
+    <a class="button button-balanced" on-tap="saveCapacity()">저장</a>
+  </ion-content>
+</ion-view>

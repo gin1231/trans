@@ -1,0 +1,92 @@
+{"frames": {
+
+"image_01-1(드래그함).tiff":
+{
+	"frame": {"x":1106,"y":1006,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-10(드래그함).tiff":
+{
+	"frame": {"x":554,"y":1006,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-2(드래그함).tiff":
+{
+	"frame": {"x":2,"y":1006,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-3(드래그함).tiff":
+{
+	"frame": {"x":1106,"y":1006,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-4(드래그함).tiff":
+{
+	"frame": {"x":1106,"y":504,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-5(드래그함).tiff":
+{
+	"frame": {"x":554,"y":504,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-6(드래그함).tiff":
+{
+	"frame": {"x":2,"y":504,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-7(드래그함).tiff":
+{
+	"frame": {"x":1106,"y":2,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-8(드래그함).tiff":
+{
+	"frame": {"x":554,"y":2,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+},
+"image_01-9(드래그함).tiff":
+{
+	"frame": {"x":2,"y":2,"w":550,"h":500},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":550,"h":500},
+	"sourceSize": {"w":550,"h":500}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "bombsprite.png",
+	"format": "RGBA8888",
+	"size": {"w":1658,"h":1508},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d3f58cd2d765b9ef09502bc9521a0107:ad1f2733dfb1c85dd17f2ea85d87eec7:6eff5dc8fe8cef19463b3b941274a171$"
+}
+}

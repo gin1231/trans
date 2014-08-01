@@ -1,0 +1,80 @@
+<ion-view title="오늘의 술">
+<ion-nav-buttons side="right">
+  <a class="button button-energized" ui-sref="tab.today-hey" style="font-weight: bold; font-size: 120%;">
+    싸장님
+  </a>
+</ion-nav-buttons>
+  <ion-content class="has-header padding">
+    <ion-slide-box on-slide-changed="drinkTypeChanged($index)" show-pager="false">
+      <ion-slide ng-repeat="drinkType in drinkTypes">
+        <h1 style="text-align: center; font-size: 150%;">
+          &lt;
+          {{ drinkType.name }}
+          <img ng-src="img/drink_types/{{ drinkType.enName }}.png" style="height: 40px;" />
+          &gt;
+        </h1>
+        <div class="drinkList {{ drinkType.enName }}" style="height: 300px;">
+          <label class="item item-input item-select">
+            <div class="input-label">
+              술 선택
+            </div>
+            <select ng-model="selectedDegree" ng-options="drink.degree as drink.name for drink in drinks">
+            </select>
+          </label>
+          <div style="width: 100%; text-align: center; margin-top: 30px;">
+            <img ng-src="img/drink_types/glass/{{ drinkType.enName }}.png" style="height: 70px;" />
+            <div ng-if="selectedDegree" style="font-size: 130%;">
+              {{ capacity / selectedDegree | number: 0 }} 잔
+              <div ng-if="drinkType.enName === 'soju'" style="margin-top: 20px;">
+                =
+                {{ (capacity / selectedDegree | number: 1)/(7.5) | number: 0 }} 병
+                <img ng-src="img/drink_types/bottle/{{ drinkType.enName }}.png" style="height: 40px;" />
+                {{ (capacity / selectedDegree | number: 1)%(7.5) | number: 0 }} 잔
+                <img ng-src="img/drink_types/glass/{{ drinkType.enName }}.png" style="height: 40px;" />
+
+                <br /><br />
+                오늘도 취해서 <br />
+                전 애인에게 전화하실겁니까?
+              </div>
+              <div ng-if="drinkType.enName === 'sake'" style="margin-top: 20px;">
+                =
+                {{ (capacity / selectedDegree | number: 1)/(15) | number: 0 }} 병
+                <img ng-src="img/drink_types/bottle/{{ drinkType.enName }}.png" style="height: 40px;" />
+                {{ (capacity / selectedDegree | number: 1)%(15) | number: 0 }} 잔
+                <img ng-src="img/drink_types/glass/{{ drinkType.enName }}.png" style="height: 40px;" />
+              </div>
+              <div ng-if="drinkType.enName === 'makgeolli'">
+                =
+                {{ (capacity / selectedDegree | number: 1)/(3.75) | number: 0 }} 병
+                <img ng-src="img/drink_types/bottle/{{ drinkType.enName }}.png" style="height: 40px;" />
+                {{ (capacity / selectedDegree | number: 1)%(3.75) | number: 0 }} 잔
+                <img ng-src="img/drink_types/glass/{{ drinkType.enName }}.png" style="height: 40px;" />
+                <br />
+                집에가면 뽀삐가 친구하자 할듯 왈! 왈!<br /><br />
+                <img ng-src="img/today/dog.jpg" style="height: 80px;" />
+              </div>
+              <div ng-if="drinkType.enName === 'beer'">
+                <br /><br />
+                배 터지시기 전에 간 터지실듯 ㅎㅎ
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-content>
+</ion-view>
+
+<script id="today-set-capacity.html" type="text/ng-template">
+<div class="list">
+  <label class="item item-radio drink-type-label" ng-repeat="drinkType in drinkTypes">
+    <input type="radio" name="drinkType" ng-model="data.drinkType" value="{{ $index }}">
+    <div class="item-content {{ drinkType.enName }}">
+      {{ drinkType.name }}
+    </div>
+    <i class="radio-icon ion-checkmark"></i>
+  </label>
+</div>
+<input type="number" ng-model="data.bottle" placeholder="병">
+<input type="number" ng-model="data.glass" placeholder="잔">
+</script>

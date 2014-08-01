@@ -1,0 +1,29 @@
+<!--
+  Create tabs with an icon and label, using the tabs-positive style.
+  Each tab's child <ion-nav-view> directive will have its own
+  navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top">
+
+
+  <!-- Today Tab -->
+  <ion-tab title="오늘의 술" icon="icon ion-beer" ui-sref="tab.today">
+    <ion-nav-view name="tab-today"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Game Tab -->
+  <ion-tab title="게임" icon="icon ion-game-controller-b" ui-sref="tab.game">
+    <ion-nav-view name="tab-game"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Recipe Tab -->
+  <ion-tab title="레시피" icon="icon ion-beaker" ui-sref="tab.recipe">
+    <ion-nav-view name="tab-recipe"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Setting Tab -->
+  <ion-tab title="설정" icon="icon ion-gear-b" ui-sref="tab.setting">
+    <ion-nav-view name="tab-setting"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>

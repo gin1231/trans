@@ -1,0 +1,9 @@
+<ion-view title="게임">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="game in games" type="item-text-wrap" href="#/tab/game_{{game.enName}}">
+        {{ game.name }}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
